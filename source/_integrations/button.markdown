@@ -48,6 +48,9 @@ means we can use it in our automations. For example:
 triggers:
   - trigger: state
     entity_id: button.my_button
+    from: 09:00:00
+    to: 17:00:00
+    # Automation only triggers between 0900 and 1700. 
 actions:
   - action: notify.frenck
     data:
